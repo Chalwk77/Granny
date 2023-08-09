@@ -25,8 +25,14 @@ jobs:
       - name: Build with Maven 🏗️
         run: mvn -B package --file pom.xml
 
-      - name: Publish Artifact 🚀
-        uses: actions/upload-artifact@v3
+      - run: mkdir staging && cp target/*.jar staging
+      - uses: actions/upload-artifact@v3
         with:
-          name: Granny
-          path: target/*.jar
+          name: Package
+          path: staging
+
+#      - name: Publish Artifact 🚀
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: Granny
+#          path: target/*.jar
