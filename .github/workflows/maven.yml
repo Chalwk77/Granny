@@ -25,19 +25,8 @@ jobs:
       - name: Build with Maven 🏗️
         run: mvn -B package --file pom.xml
 
-  archive-build-artifacts:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-
-      - name: Step 1 - Create directory
-        run: mkdir -p downloads
-
-      - name: Step 2 - Copy files
-        run: cp -r /target/* downloads/
-
-      - name: Step 3 - Archive files
-        uses: actions/upload-artifact@v2
+      - name: Publish Artifact 🚀
+        uses: actions/upload-artifact@v3
         with:
-          name: build-artifacts
-          path: downloads
+          name: Granny
+          path: target/*.jar
