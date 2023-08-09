@@ -1,6 +1,10 @@
 # Compiled class file
 *.class
 
+token/
+.idea/
+auth.token
+
 # Log file
 *.log
 
