@@ -34,7 +34,7 @@ jobs:
         run: mkdir -p downloads
 
       - name: Step 2 - Copy files
-        run: cp -r target/* downloads/
+        run: cp -r /target/* downloads/
 
       - name: Step 3 - Archive files
         uses: actions/upload-artifact@v2
