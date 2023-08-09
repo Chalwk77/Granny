@@ -12,3 +12,5 @@ Granny doesn't tolerate Millennial and Gen-Z antics. So watch yourself, son!
 - Granny dislikes it when you use the lords name in vain.
 
 ![WORKFLOW STATUS](https://github.com/Chalwk77/Granny/actions/workflows/maven.yml/badge.svg)
+
+Granny is a Work-In-Progress Discord bot written in Java using the [JDA](https://github.com/discord-jda/JDA) library.

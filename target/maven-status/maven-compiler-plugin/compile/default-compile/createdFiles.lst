@@ -1,8 +1,0 @@
-com\chalwk\listeners\CommandInterface.class
-com\chalwk\util\NewTimer.class
-com\chalwk\util\Authentication.class
-com\chalwk\listeners\EventListeners.class
-com\chalwk\listeners\CommandManager.class
-com\chalwk\commands\RenameThisCommand.class
-com\chalwk\Main.class
-com\chalwk\util\FileIO.class

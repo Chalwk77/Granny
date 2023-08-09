@@ -2,6 +2,7 @@
 
 package com.chalwk.listeners;
 
+import com.chalwk.util.CatStories;
 import com.chalwk.util.NewTimer;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.User;
@@ -18,7 +19,7 @@ public class EventListeners extends ListenerAdapter {
         System.out.println("Bot name: " + event.getJDA().getSelfUser().getName());
 
         NewTimer timer = new NewTimer();
-        timer.initTimer(1);
+        timer.newTimer(1, new CatStories());
     }
 
      @Override
