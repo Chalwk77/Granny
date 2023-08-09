@@ -10,3 +10,5 @@ Granny doesn't tolerate Millennial and Gen-Z antics. So watch yourself, son!
 - Granny is a proud lover of cats, and she will not hesitate to tell you about her cats.
 - Granny served in the Auxiliary Territorial Service (ATS) during World War II, and you will hear endless stories about her time in the service.
 - Granny dislikes it when you use the lords name in vain.
+
+![WORKFLOW STATUS](https://github.com/Chalwk77/Granny/actions/workflows/maven.yml/badge.svg)
