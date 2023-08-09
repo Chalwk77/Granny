@@ -30,15 +30,3 @@ jobs:
         with:
           name: Granny
           path: target/*.jar
-
-      - name: Publish to GitHub Packages 📦
-        uses: elgohr/Publish-Docker-Github-Action@master
-        with:
-          name: Granny
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: docker.pkg.github.com
-          repository: ${{ github.repository }}
-          tag: latest
-          dockerfile: Dockerfile
-          path: target/*.jar
