@@ -24,3 +24,9 @@ jobs:
 
       - name: Step 2. Build with Maven 🏗️
         run: mvn -B package --file pom.xml
+
+      - name: Step 3. Publish Artifact 🚀
+        uses: actions/upload-artifact@v2
+        with:
+          name: Granny
+          path: target/*.jar
