@@ -16,6 +16,7 @@ public class NewTimer extends TimerTask {
 
     @Override
     public void run() {
-        System.out.println("Timer task executed.");
+
+
     }
 }
