@@ -25,14 +25,19 @@ jobs:
       - name: Build with Maven 🏗️
         run: mvn -B package --file pom.xml
 
-      - run: mkdir staging && cp target/*.jar staging
-      - uses: actions/upload-artifact@v3
-        with:
-          name: Package
-          path: staging
+  archive-build-artifacts:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
 
-#      - name: Publish Artifact 🚀
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: Granny
-#          path: target/*.jar
+      - name: Step 1 - Create directory
+        run: mkdir -p downloads
+
+      - name: Step 2 - Copy files
+        run: cp -r $GITHUB_WORKSPACE/target/*.jar downloads/
+
+      - name: Step 3 - Archive files
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: downloads
