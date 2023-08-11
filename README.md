@@ -1,5 +1,3 @@
-# Granny
-
 ![Logo](https://i.imgur.com/dZY5tZC.png)
 
 Granny doesn't tolerate Millennial and Gen-Z antics. So watch yourself, son!
